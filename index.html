@@ -27,10 +27,13 @@ else if (op_list == "*") {
 else if (op_list == "/") {
     result = num1 / num2;
 }
-else {
+else if (op_list == "%") {
     result = num1 % num2;
 }
-
+else {
+    alert("You've entered an invalid operator");
+    result = NaN
+}
 alert("Your result is: " + result);
     </script>
 </body>
